@@ -37,6 +37,28 @@ margin-top: 10%;;
     border-radius: 2px;;
 }
 
+.first{
+    animation: moving 5s ease-in forwards;
+  }
 
+  @keyframes moving {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+     transform: rotate(-9deg);
+    }
+  }
+  .second{
+    animation: moving 2s ease-in forwards;
+    animation-delay: 4.5s;
+  }
 
-
+  @keyframes moving {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+     transform: rotate(-9deg);
+    }
+  }
