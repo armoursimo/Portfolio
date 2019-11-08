@@ -1,0 +1,42 @@
+// VARIABLES:
+$desktop: 1200px;
+$laptop: 800px;
+$iphone: 375px;
+
+// MIXINS
+@mixin desktop{
+    @media (min-width: #{$desktop}){
+        @content;
+    }
+}
+
+@mixin iphone{
+    @media (min-width: #{$iphone}){
+        @content;
+    }
+}
+
+
+.col-sm-3, .col-sm-5{
+    background-color: darkslategray;
+    height: 25px;
+    @include desktop{
+        height: 20px;
+    }
+
+    @include iphone{
+        height: 15px;
+    }
+}
+
+.top-row{
+margin-top: 10%;;
+}
+
+.border{
+    border-radius: 2px;;
+}
+
+
+
+

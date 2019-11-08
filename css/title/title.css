@@ -1,1 +1,25 @@
-/* No CSS *//*# sourceMappingURL=title.css.map */
+.col-sm-3, .col-sm-5 {
+  background-color: darkslategray;
+  height: 25px;
+}
+
+@media (min-width: 1200px) {
+  .col-sm-3, .col-sm-5 {
+    height: 20px;
+  }
+}
+
+@media (min-width: 375px) {
+  .col-sm-3, .col-sm-5 {
+    height: 15px;
+  }
+}
+
+.top-row {
+  margin-top: 10%;
+}
+
+.border {
+  border-radius: 2px;
+}
+/*# sourceMappingURL=title.css.map */
