@@ -30,7 +30,7 @@ $iphone: 375px;
 }
 
 .top-row{
-margin-top: 10%;;
+margin-top: 5%;;
 }
 
 .border{
@@ -39,26 +39,31 @@ margin-top: 10%;;
 
 .first{
     animation: moving 5s ease-in forwards;
+    animation-delay: 2s;
   }
 
   @keyframes moving {
     0% {
       transform: rotate(0deg);
     }
+    50%{
+        transform: rotate(-9deg);
+    }
     100% {
-     transform: rotate(-9deg);
+     transform: rotate(0deg);
     }
   }
   .second{
-    animation: moving 2s ease-in forwards;
-    animation-delay: 4.5s;
+    animation: moving2 2s ease-in forwards;
+    animation-delay: 4.3s;
   }
 
-  @keyframes moving {
+  @keyframes moving2 {
     0% {
       transform: rotate(0deg);
     }
-    100% {
-     transform: rotate(-9deg);
+    100%{
+        transform: rotate(-9deg);
     }
+
   }
